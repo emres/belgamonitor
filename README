@@ -17,17 +17,31 @@ Dependencies
 ------------
 This program depends on the following software:
 
-* Ruby 
-* Watir
-* Googlecharts
-* IE or Firefox web browser
+     * Ruby 
+     * Watir
+     * Googlecharts
+     * IE or Firefox web browser
 
 If you don't have any of these installed here are relevant links and 
 documentation:
 
-* http://www.ruby-lang.org/en/downloads
-* http://watir.com
-* http://googlecharts.rubyforge.org/
+     * http://www.ruby-lang.org/en/downloads
+     * http://watir.com
+     * http://googlecharts.rubyforge.org/
+
+Optional
+--------
+If you want to have a GUI, you can belgamonitor_gui however this adds 
+another dependency:
+
+    * ActiveTcl 8.4
+
+You may download ActiveState's Tcl/Tk GUI toolkit for Ruby from
+
+    * https://www.activestate.com/activetcl/downloads/
+
+but please make *sure* that you download version *8.4* and not version 8.5
+or 8.6
 
 Installation
 ------------
