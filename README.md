@@ -1,10 +1,11 @@
-Description
+
+Description 
 ============ 
 
 belgamonitor is a small utility to monitor the Internet capacity already 
 used for Belgacom Internet. 
 
-Motivation
+Motivation 
 =========== 
 
 I have created this little piece of software because I'm a Belgacom 
@@ -15,7 +16,7 @@ that shows me how much data I have used, preferably in a graphical way, but
 I couldn't find one (who knows maybe I haven't googled hard enough, anyway)
 so I decided it to roll up something myself using Ruby.
 
-Dependencies
+Dependencies 
 ============
 
 This program depends on the following software:
@@ -46,8 +47,10 @@ You may download ActiveState's Tcl/Tk GUI toolkit for Ruby from
 but please make *sure* that you download version *8.4* and not version 8.5
 or 8.6
 
+
 Installation
-======================================================================== 
+============
+ 
 If you were able to install the above software successfully then you are
 very close to using the program. Here are the steps:
 
@@ -67,10 +70,10 @@ If you ever receive an error similar to
 
 ruby belgacom_gui.rb
 
-C:/Ruby/lib/ruby/gems/1.8/gems/watir-1.6.2/lib/watir/ie.rb:113:in `initialize':
-unknown OLE server: `AutoItX3.Control' (WIN32OLERuntimeError)
-    HRESULT error code:0x800401f3
-      Invalid class string
+> C:/Ruby/lib/ruby/gems/1.8/gems/watir-1.6.2/lib/watir/ie.rb:113:in `initialize':
+> unknown OLE server: `AutoItX3.Control' (WIN32OLERuntimeError)
+>    HRESULT error code:0x800401f3
+>      Invalid class string
 
 Please run a command shell (e.g. cmd) as an Administrator, go to the 
 directory where AutoItX3.dll is and run regsvr32 on it, e.g.:
