@@ -29,9 +29,9 @@ This program depends on the following software:
 If you don't have any of these installed here are relevant links and 
 documentation:
 
-* http://www.ruby-lang.org/en/downloads
-* http://watir.com
-* http://googlecharts.rubyforge.org/
+* [http://www.ruby-lang.org/en/downloads](http://www.ruby-lang.org/en/downloads)
+* (http://watir.com)
+* (http://googlecharts.rubyforge.org/)
 
 Optional
 ========
@@ -70,10 +70,10 @@ If you ever receive an error similar to
 
 ruby belgacom_gui.rb
 
-> C:/Ruby/lib/ruby/gems/1.8/gems/watir-1.6.2/lib/watir/ie.rb:113:in `initialize':
-> unknown OLE server: `AutoItX3.Control' (WIN32OLERuntimeError)
->    HRESULT error code:0x800401f3
->      Invalid class string
+     C:/Ruby/lib/ruby/gems/1.8/gems/watir-1.6.2/lib/watir/ie.rb:113:in `initialize':
+     unknown OLE server: `AutoItX3.Control' (WIN32OLERuntimeError)
+     	     HRESULT error code:0x800401f3
+	     Invalid class string
 
 Please run a command shell (e.g. cmd) as an Administrator, go to the 
 directory where AutoItX3.dll is and run regsvr32 on it, e.g.:
