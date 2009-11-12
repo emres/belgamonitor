@@ -1,4 +1,5 @@
 
+
 Description 
 ============ 
 
@@ -16,9 +17,9 @@ that shows me how much data I have used, preferably in a graphical way, but
 I couldn't find one (who knows maybe I haven't googled hard enough, anyway)
 so I decided it to roll up something myself using Ruby.
 
+
 Dependencies 
 ============
-
 This program depends on the following software:
 
 * Ruby 
@@ -30,8 +31,8 @@ If you don't have any of these installed here are relevant links and
 documentation:
 
 * [http://www.ruby-lang.org/en/downloads](http://www.ruby-lang.org/en/downloads)
-* (http://watir.com)
-* (http://googlecharts.rubyforge.org/)
+* [http://watir.com](http://watir.com)
+* [http://googlecharts.rubyforge.org/](http://googlecharts.rubyforge.org/)
 
 Optional
 ========
@@ -64,13 +65,14 @@ very close to using the program. Here are the steps:
   ruby belgacom.rb
   Or simply by double clicking on the belgacom.rb file.
 
-Important Notes
-======================================================================== 
+Important Notes 
+=============== 
+
 If you ever receive an error similar to
 
-ruby belgacom_gui.rb
+   ruby belgacom_gui.rb
 
-     C:/Ruby/lib/ruby/gems/1.8/gems/watir-1.6.2/lib/watir/ie.rb:113:in `initialize':
+   C:/Ruby/lib/ruby/gems/1.8/gems/watir-1.6.2/lib/watir/ie.rb:113:in `initialize':
      unknown OLE server: `AutoItX3.Control' (WIN32OLERuntimeError)
      	     HRESULT error code:0x800401f3
 	     Invalid class string
@@ -78,14 +80,14 @@ ruby belgacom_gui.rb
 Please run a command shell (e.g. cmd) as an Administrator, go to the 
 directory where AutoItX3.dll is and run regsvr32 on it, e.g.:
 
-cd C:\Ruby\lib\ruby\gems\1.8\gems\watir-1.6.2\lib\watir
+	  cd C:\Ruby\lib\ruby\gems\1.8\gems\watir-1.6.2\lib\watir
 
-regsvr32 AutoItX3.dll
+	  regsvr32 AutoItX3.dll
 
 And hopefully you'll get a nice pop-up telling you that the DLL file is
 registered and now you can run the program without that error. 
 Interestingly I found this solution at this address:
 
-http://wiki.openqa.org/display/WTR/FAQ#FAQ-HowdoItakescreenshotsandappendtoaWordfile%3F
+[http://wiki.openqa.org/display/WTR/FAQ#FAQ-HowdoItakescreenshotsandappendtoaWordfile%3F](http://wiki.openqa.org/display/WTR/FAQ#FAQ-HowdoItakescreenshotsandappendtoaWordfile%3F)
 
 Don't ask me why.
