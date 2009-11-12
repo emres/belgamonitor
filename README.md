@@ -2,20 +2,11 @@
 
 Description 
 ============ 
-
-belgamonitor is a small utility to monitor the Internet capacity already 
-used for Belgacom Internet. 
+belgamonitor is a small utility to monitor the Internet capacity already used for Belgacom Internet. 
 
 Motivation 
 =========== 
-
-I have created this little piece of software because I'm a Belgacom 
-customer and I have a monthly limit (25 GB). If I hit this limit before 
-the last day of the month either I have to buy another 5 GB or suffer 
-a very slow Internet connection. I was desparate to find a simple utility
-that shows me how much data I have used, preferably in a graphical way, but
-I couldn't find one (who knows maybe I haven't googled hard enough, anyway)
-so I decided it to roll up something myself using Ruby.
+I have created this little piece of software because I'm a Belgacom customer and I have a monthly limit (25 GB). If I hit this limit before the last day of the month either I have to buy another 5 GB or suffer a very slow Internet connection. I was desparate to find a simple utility that shows me how much data I have used, preferably in a graphical way, but I couldn't find one (who knows maybe I haven't googled hard enough, anyway) so I decided it to roll up something myself using Ruby.
 
 
 Dependencies 
@@ -43,7 +34,7 @@ another dependency:
 
 You may download ActiveState's Tcl/Tk GUI toolkit for Ruby from
 
-* https://www.activestate.com/activetcl/downloads/
+* [https://www.activestate.com/activetcl/downloads/](https://www.activestate.com/activetcl/downloads/)
 
 but please make *sure* that you download version *8.4* and not version 8.5
 or 8.6
