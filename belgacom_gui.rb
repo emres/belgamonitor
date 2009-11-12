@@ -2,6 +2,7 @@ require 'ftools'
 require 'watir'
 require 'gchart'
 require 'tk'
+require 'win32ole'
 
 class Belgamonitor
 
@@ -25,6 +26,7 @@ class Belgamonitor
     $ie.form(:name, "logClient").submit
     $ie.link(:text, "my internet").click
     $ie.link(:text, "Consult monthly volume").click
+
     $ie.text =~ /Monthly volume used(.*)/
     rLine = $1
     rLine =~ /((\d{1,2} GB) (\d{1,3} MB)) out of (\d{1,2}) GB/
@@ -88,15 +90,23 @@ class Belgamonitor
                                          '0 GB | 5 GB| 10 GB| 15 GB| 20 GB| 25 GB'])
   end
 
+  def close()
+    $ie.close
+    exit
+  end
+
   def initialize 
+    @autoit = WIN32OLE.new("AutoItX3.Control")
     $ie = Watir::IE.new
+    $ie.bring_to_front
 
     root = TkRoot.new{title "Belgacom ISP Monitor"}
     top  = TkFrame.new(root)
 
     ph = { 'padx' => 100, 'pady' => 50 }     # common options
-    p1 = proc {update_statistics}
-    p2 = proc {show_current_statistics}
+    p_update_statistics = proc {update_statistics}
+    p_show_current_statistics = proc {show_current_statistics}
+    p_close = proc {close}
 
     if File.exist?('belgacom.yaml')
       current_status_button_status = "normal"
@@ -104,12 +114,14 @@ class Belgamonitor
       current_status_button_status = "disabled"
     end
 
-    #TkButton.new(top) {text 'Show current statistics'; command p2; pack ph}
     TkButton.new(top) {text 'Show current statistics'; 
                        state current_status_button_status; 
-                       command p2; pack ph}
-    TkButton.new(top) {text 'Update statistics'; command p1; pack ph}
-    TkButton.new(top) {text 'Exit'; command {proc exit}; pack ph}
+                       command p_show_current_statistics; 
+                       pack ph}
+    TkButton.new(top) {text 'Update statistics'; 
+                       command p_update_statistics; 
+                       pack ph}
+    TkButton.new(top) {text 'Exit'; command p_close; pack ph}
 
     top.pack('fill'=>'both', 'side' =>'top')
   end
