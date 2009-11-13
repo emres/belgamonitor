@@ -41,26 +41,22 @@ or 8.6
 
 Installation
 ------------
- 
 If you were able to install the above software successfully then you are
 very close to using the program. Here are the steps:
 
-- Go the directory where you downloaded the program
+* Go the directory where you downloaded the program
   e.g. cd /belgamonitor
-- Edit the config.yaml
+* Edit the config.yaml
   e.g. open it with a text editor (Notepad, VIM, Emacs, etc.) and
   in place of the username and password write your username and password.
   Then save the file.
-- Now simply run the belgacom.rb file either using command line:
+* Now simply run the belgacom.rb file either using command line:
   ruby belgacom.rb
   Or simply by double clicking on the belgacom.rb file.
 
 Important Notes 
 ---------------
-
 If you ever receive an error similar to
-
-   ruby belgacom_gui.rb
 
    C:/Ruby/lib/ruby/gems/1.8/gems/watir-1.6.2/lib/watir/ie.rb:113:in `initialize':
      unknown OLE server: `AutoItX3.Control' (WIN32OLERuntimeError)
