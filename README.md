@@ -1,14 +1,15 @@
-Description 
-============ 
+
+Description
+============
 belgamonitor is a small utility to monitor the Internet capacity already used for Belgacom Internet. 
 
 Motivation 
-=========== 
+----------
 I have created this little piece of software because I'm a Belgacom customer and I have a monthly limit (25 GB). If I hit this limit before the last day of the month either I have to buy another 5 GB or suffer a very slow Internet connection. I was desparate to find a simple utility that shows me how much data I have used, preferably in a graphical way, but I couldn't find one (who knows maybe I haven't googled hard enough, anyway) so I decided it to roll up something myself using Ruby.
 
 
 Dependencies 
-============
+------------
 This program depends on the following software:
 
 * Ruby 
@@ -24,7 +25,7 @@ documentation:
 * [http://googlecharts.rubyforge.org/](http://googlecharts.rubyforge.org/)
 
 Optional
-========
+--------
 If you want to have a GUI, you can belgamonitor_gui however this adds 
 another dependency:
 
@@ -39,7 +40,7 @@ or 8.6
 
 
 Installation
-============
+------------
  
 If you were able to install the above software successfully then you are
 very close to using the program. Here are the steps:
@@ -55,7 +56,7 @@ very close to using the program. Here are the steps:
   Or simply by double clicking on the belgacom.rb file.
 
 Important Notes 
-=============== 
+---------------
 
 If you ever receive an error similar to
 
